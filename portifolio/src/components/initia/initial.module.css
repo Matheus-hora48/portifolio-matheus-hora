@@ -12,6 +12,7 @@
 }
 
 .info h1{
+    color: var(--black-color);
     font-size: 64px;
     font-weight: 900;
 }
@@ -49,4 +50,6 @@
 .photo{
     width: 30vw;
     height: 360px;
+    display: flex;
+    justify-content: flex-end;
 }

@@ -1,10 +1,11 @@
 import Image from "next/image";
 import styles from "../styles/page.module.css";
+import Initial from "@/components/initia/initial";
 
 export default function Home() {
-  return <main>
-    <div>
-      <h1>Inicio</h1>
-    </div>
-  </main>;
+  return (
+    <main>
+      <Initial />
+    </main>
+  );
 }

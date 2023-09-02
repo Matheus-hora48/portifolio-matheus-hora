@@ -1,0 +1,52 @@
+.initial{
+    width: 100vw;
+    height: 100vh;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info{
+    width: 70vw;
+}
+
+.info h1{
+    font-size: 64px;
+    font-weight: 900;
+}
+
+.info span{
+    color: var(--primary-color);
+}
+
+.info p{
+    max-width: 600px;
+    color: var(--black-color, );
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: 24px;
+}
+
+.icons{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.icon{
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease-in;
+}
+
+.icon:hover{
+    background-color: var(--secundary-color);
+}
+
+.photo{
+    width: 30vw;
+    height: 360px;
+}

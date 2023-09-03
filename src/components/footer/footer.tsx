@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className={Style.footer}>
       <div className={Style.title}>
         <Link href={"/"} className={Style.links}>
-          Matheus Hora ©
+          Made by Matheus Hora ©
         </Link>
       </div>
       <div className={Style.navigation}>

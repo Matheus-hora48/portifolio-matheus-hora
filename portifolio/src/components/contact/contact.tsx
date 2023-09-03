@@ -6,22 +6,34 @@ import Email from "../../../public/icons/email.svg";
 import Linkedin from "../../../public/icons/linkedin.svg";
 
 const Contact = () => {
-  return (
+  return (    
     <section className={Style.contact}>
       <div className={Style.contactDiv}>
         <h2>Entre em contato</h2>
         <div className={Style.socialContainer}>
           <div className={Style.social}>
-            <Image src={Email} alt={"Icon Email"} />
-            <Link href={"mailto:matheus11hora@gmail.com"}>
+            <Image
+              src={Email}
+              alt={"Icon Email"}
+              className={Style.iconsSocial}
+            />
+            <Link
+              href={"mailto:matheus11hora@gmail.com"}
+              className={Style.textSocial}
+            >
               matheus11hora@gmail.com
             </Link>
           </div>
           <div className={Style.social}>
-            <Image src={Linkedin} alt={"Icon linkedin"} />
+            <Image
+              src={Linkedin}
+              alt={"Icon linkedin"}
+              className={Style.iconsSocial}
+            />
             <Link
               href={"https://www.linkedin.com/in/devmatheushora/"}
               target="_blank"
+              className={Style.textSocial}
             >
               devmatheushora
             </Link>

@@ -1,0 +1,84 @@
+.projectSection {
+  padding: 0 80px;
+  width: 100vw;
+  margin-bottom: 24px;
+  background-color: var(--grey-color);
+  padding: 80px;
+}
+
+.projectSection h2 {
+  color: var(--black-color);
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.projectContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project {
+  flex: 1;
+  width: 80vw;
+  min-width: calc(50% - 50px);
+  padding: 24px;
+  filter: drop-shadow(0px 4px 4px rgba(59, 59, 59, 0.25));
+  border-radius: 16px;
+  background: #fff;
+}
+
+.project h2 {
+  margin-top: 24px;
+  color: var(--black-color);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.project p {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.projectList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.buttonSection {
+  margin-top: 24px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.buttonSection button {
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  display: flex;
+  border-radius: 16px;
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.1s ease-in;
+}
+
+.buttonSection button:hover {
+  cursor: pointer;
+  background-color: var(--secundary-color);
+}
+
+@media (max-width: 768px) {
+  .project {
+    min-width: 100%;
+  }
+}

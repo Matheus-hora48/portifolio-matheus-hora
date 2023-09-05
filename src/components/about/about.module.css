@@ -40,3 +40,8 @@
     font-size: 20px;
     font-weight: 400;
 }
+
+.moreInfos{
+    display: flex;
+    justify-content: center;
+}

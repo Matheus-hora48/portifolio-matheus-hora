@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Style from "./about.module.css";
 import Photo from "../../../public/images/designer.svg";
+import MoreInfos from "../moreInfos/moreInfos";
 
 const About = () => {
   return (
@@ -31,8 +32,9 @@ const About = () => {
           </p>
         </div>
       </div>
-
-      <div></div>
+      <div className={Style.moreInfos}>
+        <MoreInfos />
+      </div>
     </section>
   );
 };

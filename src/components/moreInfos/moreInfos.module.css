@@ -1,0 +1,33 @@
+.container {
+  margin-top: 50px;
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 5px;
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  max-width: 920px;
+}
+
+.button {
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  color: rgba(63, 108, 244, 0.60);
+  transition: 0.3s ease-in;
+  margin-bottom: 50px;
+}
+
+.selected{ 
+    color: var(--primary-color);
+    padding: 0 8px;
+    border-bottom: 1px solid var(--primary-color);
+}

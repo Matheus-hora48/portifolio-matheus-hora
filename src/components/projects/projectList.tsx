@@ -14,7 +14,14 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
     <div className={Style.projectList}>
       {projects.map((project, index) => (
         <div className={Style.project} key={index}>
-          <Image src={Photo} alt={"Image project"} height={280} />
+          <div className={Style.imageContainer}>
+            <Image
+              src={Photo}
+              alt={"Image project"}
+              layout="responsive"
+              height={250}
+            />
+          </div>
           <h2>{project.title}</h2>
           <p>{project.description}</p>
           <div className={Style.buttonSection}>

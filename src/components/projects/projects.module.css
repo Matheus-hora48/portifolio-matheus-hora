@@ -4,19 +4,22 @@
   margin-bottom: 24px;
   background-color: var(--grey-color);
   padding: 80px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .projectSection h2 {
   color: var(--black-color);
   font-size: 32px;
   font-weight: 700;
-  margin-bottom: 24px;
+  margin-bottom: 60px;
 }
 
 .projectContainer {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
 .project {
@@ -27,20 +30,22 @@
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
   border-radius: 16px;
   background: #fff;
+  max-width: 350px;
+
 }
 
 .project h2 {
   margin-top: 24px;
   color: var(--black-color);
   text-align: center;
-  font-size: 18px;
+  font-size: 1.2em;
   font-weight: 600;
 }
 
 .project p {
   margin-top: 24px;
   text-align: center;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 300;
 }
 
@@ -54,6 +59,7 @@
   margin-top: 24px;
   display: flex;
   width: 100%;
+  font-size: 16px;
   justify-content: space-between;
 }
 
@@ -77,8 +83,18 @@
   background-color: var(--secundary-color);
 }
 
+.imageContainer {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+
 @media (max-width: 768px) {
   .project {
     min-width: 100%;
+  }
+
+  .projectSection {
+    padding: 40px;
   }
 }

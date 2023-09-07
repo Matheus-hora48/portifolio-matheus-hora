@@ -77,18 +77,12 @@
   }
 
   .socialContainer {
-    padding: 0.3em 1em;
+    padding: 0.5em 1em;
     flex-direction: column;
 
   }
 
-  .iconsSocial {
-    width: 1.5em;
-    height: 1.5em;
-  }
-
   .textSocial {
-    font-size: 0.9em;
     padding: 0.5em;
   }
 

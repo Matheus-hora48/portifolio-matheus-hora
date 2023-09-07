@@ -2,53 +2,32 @@
     background-color: var(--black-color);
     width: 100%;
     display: flex;
-    min-height: 80px; /* Usei 'min-height' para garantir que o conteúdo seja visível em telas pequenas */
+    min-height: 80px; 
     justify-content: center;
     align-items: center;
-    text-align: center;
     color: white;
-    font-size: 1em; /* Usei 'em' para o tamanho da fonte */
+    font-size: 1em;
     font-weight: 600;
+    flex-direction: column;
   }
   
   .title {
-    margin-right: 2em; /* Usei 'em' para o espaçamento à direita */
+    margin: 16px 0;
   }
   
   .navigation {
     display: flex;
-    justify-content: space-between;
-    width: 50%; /* Usei porcentagem para tornar o layout mais responsivo */
+    margin-bottom: 16px;
+    
   }
   
   .links {
     color: white;
     text-decoration: none;
+    margin: 0 20px;
   }
   
   .links:hover {
     color: var(--secundary-color);
-  }
-  
-  @media (max-width: 768px) {
-    .footer {
-      flex-direction: column;
-      text-align: center;
-      padding: 24px;
-    }
-  
-    .title {
-      margin-bottom: 1em; 
-      margin-right: 0;
-      margin-bottom: 16px;
-    }
-  
-    .navigation {
-      width: 100%; /* Utilizei 100% da largura para ocupar toda a largura do footer */
-    }
-  
-    .links {
-      margin-bottom: 0.5em; /* Adicionei um pequeno espaçamento entre os links */
-    }
   }
   

@@ -33,9 +33,7 @@ const Projects = () => {
   return (
     <section className={Style.projectSection}>
       <h2>Meus Projetos</h2>
-      <div className={Style.projectContainer}>
-        <ProjectList projects={projects} />
-      </div>
+      <ProjectList projects={projects} />
     </section>
   );
 };

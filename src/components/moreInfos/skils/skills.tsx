@@ -12,23 +12,29 @@ const Skills = () => {
 
   return (
     <div className={Style.container}>
-      <h3>Tecnologias mobile</h3>
-      <div className={Style.tech}>
-        <span>Flutter</span>
-        <Image
-          className={`${isOpen ? Style.arrowOpen : Style.arrow}`}
-          height={15}
-          width={15}
-          src={Arrow}
-          alt="Seta"
-          onClick={toggleContent}
-        />
-      </div>
-      {isOpen && (
-        <div className={Style.additionalContent}>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div className={Style.header} onClick={() => toggleContent()}>
+        <h3>Tecnologias mobile</h3>
+        <div className={Style.tech}>
+          <span>Flutter</span>
+          <Image
+            className={`${isOpen ? Style.arrowOpen : Style.arrow}`}
+            height={15}
+            width={15}
+            src={Arrow}
+            alt="Seta"
+          />
         </div>
-      )}
+      </div>
+      <div
+        className={`${Style.additionalContentClosed} ${
+          isOpen ? Style.additionalContent : ""
+        }`}
+      >
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
     </div>
   );
 };

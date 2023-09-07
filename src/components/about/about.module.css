@@ -1,6 +1,7 @@
 .about {
     padding: 0 80px;
-    height: 100vh;
+    height: auto;
+    margin-bottom: 80px;
 }
 
 .about h2{

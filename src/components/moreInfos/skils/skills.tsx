@@ -3,7 +3,13 @@ import Style from "./skills.module.css";
 import Image from "next/image";
 import Arrow from "../../../../public/icons/arrow.svg";
 
-const Skills = () => {
+interface Skill {
+  title: string;
+  tech: string;
+  content: string;
+}
+
+const SkillItem = ({ title, tech, content }: Skill) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleContent = () => {
@@ -13,9 +19,9 @@ const Skills = () => {
   return (
     <div className={Style.container}>
       <div className={Style.header} onClick={() => toggleContent()}>
-        <h3>Tecnologias mobile</h3>
+        <h3>{title}</h3>
         <div className={Style.tech}>
-          <span>Flutter</span>
+          <span>{tech}</span>
           <Image
             className={`${isOpen ? Style.arrowOpen : Style.arrow}`}
             height={15}
@@ -30,13 +36,10 @@ const Skills = () => {
           isOpen ? Style.additionalContent : ""
         }`}
       >
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit.
-        </p>
+        <p>{content}</p>
       </div>
     </div>
   );
 };
 
-export default Skills;
+export default SkillItem;

@@ -2,27 +2,31 @@
     padding: 0 80px;
     height: auto;
     margin-bottom: 80px;
+    max-width: 1800px;
+    margin: 0 auto;
 }
 
 .about h2{
     color: var(--black-color);
     font-size: 32px;
     font-weight: 700;
-    margin-bottom: 24px;
+    margin-bottom: 50px;
 }
 
 .content{
     display: flex;
+    max-width: 100%;
 
 }
 
 .image{
-    width: 30vw;
+    width: 30%;
 }
 
 .text{
-    width: 70vw;
+    width: 70%;
     margin-left: 24px
+    
 }
 
 .text h3 {
@@ -45,4 +49,6 @@
 .moreInfos{
     display: flex;
     justify-content: center;
+    max-width: 100%; 
+    margin-bottom: 80px;
 }

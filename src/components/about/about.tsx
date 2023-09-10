@@ -7,7 +7,6 @@ import MoreInfos from "../moreInfos/moreInfos";
 const About = () => {
   return (
     <section className={Style.about}>
-      <h2>Sobre</h2>
       <div className={Style.content}>
         <div className={Style.image}>
           <Image src={Photo} alt={"Icon designer"} />

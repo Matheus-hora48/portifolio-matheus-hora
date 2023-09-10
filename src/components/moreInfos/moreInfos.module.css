@@ -1,14 +1,13 @@
 .container {
   margin-top: 50px;
   display: flex;
-  width: 60%;
+  width: 80%;
   flex-direction: column;
   justify-content: center;
   border-radius: 12px;
   padding: 16px;
   margin-bottom: 10px;
   background-color: bol;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 5px;
 }
 
 .buttons {
@@ -30,4 +29,13 @@
     color: var(--primary-color);
     padding: 0 8px;
     border-bottom: 1px solid var(--primary-color);
+}
+
+
+.content-wrapper {
+  transition: opacity 0.3s ease-in;
+}
+
+.content-wrapper.hide {
+  opacity: 0;
 }

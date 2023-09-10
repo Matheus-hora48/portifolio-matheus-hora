@@ -1,0 +1,45 @@
+.container {
+    background-color: #f5f7fe;
+    padding: 16px;
+    border-radius: 16px;
+  }
+  
+  .header {
+    margin-bottom: 40px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: rgba(59, 59, 59, 0.80);
+    align-items: start;
+  }
+  
+  .header span {
+    color: var(--primary-color);
+  }
+
+  .header h4 {
+    margin-top: 24px;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  
+  .content p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--black-color);
+    margin-bottom: 16px;
+  }
+
+  
+  
+  .content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .content li {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--black-color);
+    margin-bottom: 8px;
+  }
+  

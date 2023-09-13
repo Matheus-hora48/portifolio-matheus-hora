@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Style from "./about.module.css";
-import Photo from "../../../public/images/designer.svg";
+import Photo from "../../../public/images/user-profile-3.svg";
 import MoreInfos from "../moreInfos/moreInfos";
 
 const About = () => {

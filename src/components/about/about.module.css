@@ -8,7 +8,7 @@
 
 .about h2{
     color: var(--black-color);
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 50px;
 }
@@ -30,7 +30,7 @@
 }
 
 .text h3 {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 24px;
     color: var(--black-color);
@@ -42,7 +42,7 @@
 
 .text p{
     color: var(--black-color);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
 }
 
@@ -51,4 +51,30 @@
     justify-content: center;
     max-width: 100%; 
     margin-bottom: 80px;
+}
+
+@media (max-width: 1000px) {
+    .about{
+        padding: 0 2rem;
+    }
+
+    .content{
+        width: 100%;
+        display: flex;
+        flex-direction:  column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .image{
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .text{
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-bottom: 80px;
+    }
 }

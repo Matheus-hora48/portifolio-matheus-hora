@@ -54,7 +54,13 @@ const Initial = () => {
         </div>
       </div>
       <div className={Style.photo}>
-        <Image src={Photo} alt={"Image autor"} width={360} height={360}></Image>
+        <Image
+          src={Photo}
+          alt={"Image autor"}
+          layout="responsive"
+          width={360}
+          height={360}
+        ></Image>
       </div>
     </section>
   );

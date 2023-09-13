@@ -25,7 +25,8 @@
 
 .text{
     width: 70%;
-    margin-left: 24px
+    margin-left: 24px;
+    margin-bottom: 80px;
     
 }
 
@@ -75,6 +76,5 @@
         width: 100%;
         height: auto;
         margin-left: 0;
-        margin-bottom: 80px;
     }
 }

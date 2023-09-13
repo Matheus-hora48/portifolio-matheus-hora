@@ -43,3 +43,15 @@
     margin-bottom: 8px;
   }
   
+
+  @media (max-width: 600px){
+    .header{
+      text-align: center;
+      font-size: 1.2rem;
+    }
+
+    .header h4 {
+      font-size: 1rem;
+    }
+
+  }

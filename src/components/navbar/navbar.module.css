@@ -29,13 +29,23 @@
 }
 
 .button {
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  display: flex;
+  border-radius: 16px;
   background-color: var(--primary-color);
-  padding: 6px 12px;
-  border: none;
-  border-radius: 6px;
-  color: #ffffff;
+  color: white;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 600;
+  transition: 0.1s ease-in;
+  border: none;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: var(--secundary-color);
 }
 
 .burguerButton {

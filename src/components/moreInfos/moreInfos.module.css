@@ -40,3 +40,11 @@
 .content-wrapper.hide {
   opacity: 0;
 }
+
+
+@media (max-width: 1000px) {
+  .content{
+      padding: 0 2rem;
+  }
+
+}

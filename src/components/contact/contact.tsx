@@ -6,7 +6,7 @@ import Email from "../../../public/icons/email.svg";
 import Linkedin from "../../../public/icons/linkedin.svg";
 
 const Contact = () => {
-  return (    
+  return (
     <section className={Style.contact}>
       <div className={Style.contactDiv}>
         <h2>Entre em contato</h2>
@@ -45,7 +45,13 @@ const Contact = () => {
           proposta interessante para mim, sinta-se à vontade para entrar em
           contato pelos canais acima.
         </p>
-        <button className={Style.button}>Baixar currículo</button>
+        <a
+          className={Style.button}
+          href="../curriculo/meu_curriculo.pdf"
+          download
+        >
+          Baixar currículo
+        </a>
       </div>
     </section>
   );

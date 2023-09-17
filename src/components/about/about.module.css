@@ -11,6 +11,7 @@
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 50px;
+    display: none;
 }
 
 .content{
@@ -59,6 +60,11 @@
         padding: 0 2rem;
     }
 
+    .about h2{
+        display: flex;
+        justify-content: center;
+    }
+
     .content{
         width: 100%;
         display: flex;
@@ -77,5 +83,6 @@
         width: 100%;
         height: auto;
         margin-left: 0;
+        padding: 0 2rem;
     }
 }

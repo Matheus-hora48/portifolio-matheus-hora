@@ -11,6 +11,10 @@
 .contactDiv {
   max-width: 800px;
   width: 90%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contactDiv h2 {
@@ -56,18 +60,27 @@
 }
 
 .button {
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  display: flex;
+  border-radius: 16px;
   background-color: var(--primary-color);
-  padding: 0.5em 1em; 
-  border: none;
-  border-radius: 12px;
-  color: #FFFFFF;
-  font-size: 1em;
-  font-weight: 700;
-  margin-top: 1em; 
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.1s ease-in;
+  width: 30%;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: var(--secundary-color);
 }
 
 @media (max-width: 600px) {
-  
+
   .contactDiv h2 {
     font-size: 1.5em;
   }

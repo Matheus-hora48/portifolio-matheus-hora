@@ -7,7 +7,7 @@ import Linkedin from "../../../public/icons/linkedin.svg";
 
 const Contact = () => {
   return (
-    <section className={Style.contact}>
+    <section className={Style.contact} id="contact">
       <div className={Style.contactDiv}>
         <h2>Entre em contato</h2>
         <div className={Style.socialContainer}>

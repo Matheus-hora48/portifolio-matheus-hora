@@ -18,7 +18,7 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
               src={project.image}
               alt={"Image project"}
               layout="responsive"
-              height={250}
+              height={200}
             />
           </div>
           <p>{project.description}</p>

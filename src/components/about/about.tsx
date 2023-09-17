@@ -6,7 +6,7 @@ import MoreInfos from "../moreInfos/moreInfos";
 
 const About = () => {
   return (
-    <section className={Style.about}>
+    <section className={Style.about} id="about">
       <h2>Sobre</h2>
       <div className={Style.content}>
         <div className={Style.image}>

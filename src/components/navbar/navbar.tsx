@@ -16,9 +16,11 @@ const Navbar = () => {
         <Link href={"/"}>Matheus Hora</Link>
       </div>
       <div className={style.buttonContainer}>
-        <Link href={""}>Sobre mim</Link>
-        <Link href={""}>Projetos</Link>
-        <button className={style.button}>Contato</button>
+        <Link href={"#about"}>Sobre mim</Link>
+        <Link href={"#project"}>Projetos</Link>
+        <Link className={style.button} href={"#contact"}>
+          Contato
+        </Link>
       </div>
       <button className={style.burguerButton} onClick={handleBurguer}>
         <span className={style.burguerIcon}></span>
@@ -27,13 +29,13 @@ const Navbar = () => {
             burguerOpen ? style.burguerContent : ""
           }`}
         >
-          <Link href={""} className={style.buttonBurguer}>
+          <Link href={"#about"} className={style.buttonBurguer}>
             Sobre mim
           </Link>
-          <Link href={""} className={style.buttonBurguer}>
+          <Link href={"#project"} className={style.buttonBurguer}>
             Projetos
           </Link>
-          <Link href={""} className={style.buttonBurguer}>
+          <Link href={"#contact"} className={style.buttonBurguer}>
             Contato
           </Link>
         </div>

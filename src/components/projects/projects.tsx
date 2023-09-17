@@ -39,7 +39,7 @@ const projects: Project[] = [
 
 const Projects = () => {
   return (
-    <section className={Style.projectSection}>
+    <section className={Style.projectSection} id="project">
       <h2>Meus Projetos</h2>
       <ProjectList projects={projects} />
     </section>

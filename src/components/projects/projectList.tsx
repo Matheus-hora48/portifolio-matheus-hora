@@ -2,7 +2,6 @@ import React from "react";
 import { Project } from "./project";
 import Style from "./projects.module.css";
 import Image from "next/image";
-import Photo from "../../../public/images/designer.svg";
 import Link from "next/link";
 
 type ProjectListProps = {
@@ -16,13 +15,12 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
         <div className={Style.project} key={index}>
           <div className={Style.imageContainer}>
             <Image
-              src={Photo}
+              src={project.image}
               alt={"Image project"}
               layout="responsive"
               height={250}
             />
           </div>
-          <h2>{project.title}</h2>
           <p>{project.description}</p>
           <div className={Style.buttonSection}>
             <button>

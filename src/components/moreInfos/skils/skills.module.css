@@ -4,6 +4,7 @@
   padding: 16px;
   border-bottom: 1px ridge rgba(59, 59, 59, 0.7);
   flex-direction: column;
+  width: 100%;
 }
 
 .header {
@@ -20,6 +21,7 @@
   justify-content: space-between;
   width: 25%;
   margin: 20px 0;
+  max-width: 1200px ;
 }
 
 .tech h3 {
@@ -47,15 +49,14 @@
 .additionalContentClosed {
   height: 0;
   overflow: hidden;
+  width: 1200px;
 }
 
 .additionalContent {
   height: auto;
-
 }
 
 .additionalContent p {
   color: var(--black-color);
   font-size: 16px;
-font-weight: 400;
 }

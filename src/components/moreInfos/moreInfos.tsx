@@ -15,16 +15,29 @@ const MoreInfos = () => {
 
   const skillsData = [
     {
-      title: "Tecnologias mobile 1",
+      title: "Tecnologias mobile",
       tech: "Flutter",
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      content: "Flutter, Kotlin",
     },
     {
-      title: "Tecnologias mobile 2",
-      tech: "React Native",
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      title: "Tecnologias Front-End Web",
+      tech: "Javacript",
+      content: "HTML, CSS, Javacript, Typescript, NextJs",
+    },
+    {
+      title: "Back-end",
+      tech: "NodeJs",
+      content: "NodeJs, NestJs",
+    },
+    {
+      title: "Database",
+      tech: "PostgresSQL",
+      content: "PostgresSQL, MariaDB, Mysql, SQLite",
+    },
+    {
+      title: "Controle de versionamento",
+      tech: "Git",
+      content: "Git, GitHub, GitLab",
     },
   ];
 

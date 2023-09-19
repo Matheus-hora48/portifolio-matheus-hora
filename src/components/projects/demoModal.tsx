@@ -11,14 +11,19 @@ const DemoModal = (props: ModalProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % props.modalImages.length);
+    let newIndex = currentIndex + 1;
+    if (newIndex >= props.modalImages.length) {
+      newIndex = 0;
+    }
+    setCurrentIndex(newIndex);
   };
 
   const prevImage = () => {
-    setCurrentIndex(
-      (prevIndex) =>
-        (prevIndex - 1 + props.modalImages.length) % props.modalImages.length
-    );
+    let newIndex = currentIndex - 1;
+    if (newIndex < 0) {
+      newIndex = props.modalImages.length - 1;
+    }
+    setCurrentIndex(newIndex);
   };
 
   useEffect(() => {

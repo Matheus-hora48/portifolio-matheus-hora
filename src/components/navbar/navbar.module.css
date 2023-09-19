@@ -101,6 +101,10 @@
 }
 
 @media (max-width: 1000px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
   .buttonContainer {
     display: none;
   }

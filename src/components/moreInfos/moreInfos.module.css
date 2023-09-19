@@ -1,7 +1,7 @@
 .container {
   margin-top: 50px;
   display: flex;
-  width: 80%;
+  min-width: 80%;
   flex-direction: column;
   justify-content: center;
   border-radius: 12px;
@@ -14,24 +14,23 @@
   display: flex;
   width: 100%;
   justify-content: space-around;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .button {
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;
-  color: rgba(63, 108, 244, 0.60);
+  color: rgba(63, 108, 244, 0.6);
   transition: 0.3s ease-in;
   margin-bottom: 16px;
 }
 
-.selected{ 
-    color: var(--primary-color);
-    padding: 0 8px;
-    border-bottom: 1px solid var(--primary-color);
+.selected {
+  color: var(--primary-color);
+  padding: 0 8px;
+  border-bottom: 1px solid var(--primary-color);
 }
-
 
 .content-wrapper {
   transition: opacity 0.3s ease-in;
@@ -41,10 +40,8 @@
   opacity: 0;
 }
 
-
 @media (max-width: 1000px) {
-  .content{
-      padding: 0 2rem;
+  .content {
+    width: 100%;
   }
-
 }

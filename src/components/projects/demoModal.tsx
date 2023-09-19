@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Style from "./demoModal.module.css";
 import Image from "next/image";
 
@@ -11,16 +11,24 @@ const DemoModal = (props: ModalProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextImage = () => {
-    if (currentIndex < props.modalImages.length - 1) {
-      setCurrentIndex(currentIndex + 1);
-    }
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % props.modalImages.length);
   };
 
   const prevImage = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
-    }
+    setCurrentIndex(
+      (prevIndex) =>
+        (prevIndex - 1 + props.modalImages.length) % props.modalImages.length
+    );
   };
+
+  useEffect(() => {
+    const interval = setInterval(nextImage, 5000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
   return (
     <div className={Style.modalContainer}>
       <div className={Style.modalContent}>
@@ -31,12 +39,18 @@ const DemoModal = (props: ModalProps) => {
           X
         </button>
         <div className={Style.imagesContainer}>
-          {props.modalImages.map((image) => (
-            <Image src={image} alt="" className={Style.image} />
-          ))}
+          <Image
+            src={props.modalImages[currentIndex]}
+            alt=""
+            className={Style.image}
+          />
         </div>
-        <button className={Style.prevImage}>{"<"}</button>
-        <button className={Style.nextImage}>{">"}</button>
+        <button className={Style.prevImage} onClick={prevImage}>
+          {"<"}
+        </button>
+        <button className={Style.nextImage} onClick={nextImage}>
+          {">"}
+        </button>
       </div>
     </div>
   );

@@ -26,14 +26,6 @@ const DemoModal = (props: ModalProps) => {
     setCurrentIndex(newIndex);
   };
 
-  useEffect(() => {
-    const interval = setInterval(nextImage, 5000);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
-
   return (
     <div className={Style.modalContainer}>
       <div className={Style.modalContent}>
@@ -46,7 +38,7 @@ const DemoModal = (props: ModalProps) => {
         <div className={Style.imagesContainer}>
           <Image
             src={props.modalImages[currentIndex]}
-            alt=""
+            alt="Images"
             className={Style.image}
           />
         </div>

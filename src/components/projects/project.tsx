@@ -3,4 +3,5 @@ export type Project = {
   description: string;
   urlGithub: string;
   image: string;
+  modalImages: any;
 };

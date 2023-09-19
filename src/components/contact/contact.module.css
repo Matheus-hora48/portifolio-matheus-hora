@@ -1,7 +1,6 @@
-
 .contact {
   text-align: center;
-  min-height: 400px; 
+  min-height: 400px;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -10,7 +9,7 @@
 
 .contactDiv {
   max-width: 800px;
-  width: 90%; 
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,36 +25,36 @@
 .contactDiv p {
   color: var(--black-color);
   text-align: center;
-  font-size: 1.25em; 
+  font-size: 1.25em;
   font-weight: 400;
   margin-bottom: 1em;
-  margin-top: 1em; 
+  margin-top: 1em;
 }
 
 .socialContainer {
   display: flex;
   align-items: center;
-  padding: 0.5em 1.5em; 
+  padding: 0.5em 1.5em;
   border-radius: 16px;
   border: 1px solid var(--black-color);
   justify-content: center;
-  margin-top: 1em; 
+  margin-top: 1em;
 }
 
 .social {
   display: flex;
   align-items: center;
-  margin: 0 0.5em; 
+  margin: 0 0.5em;
 }
 
 .iconsSocial {
-  width: 2em; 
-  height: 2em; 
-  margin-right: 0.5em; 
+  width: 2em;
+  height: 2em;
+  margin-right: 0.5em;
 }
 
 .textSocial {
-  margin: 0 0.5em; 
+  margin: 0 0.5em;
   text-decoration: underline;
 }
 
@@ -63,7 +62,6 @@
   padding: 8px 24px;
   justify-content: center;
   align-items: center;
-  gap: 16px;
   display: flex;
   border-radius: 16px;
   background-color: var(--primary-color);
@@ -71,7 +69,6 @@
   font-size: 18px;
   font-weight: 600;
   transition: 0.1s ease-in;
-  width: 30%;
 }
 
 .button:hover {
@@ -80,7 +77,6 @@
 }
 
 @media (max-width: 600px) {
-
   .contactDiv h2 {
     font-size: 1.5em;
   }
@@ -92,7 +88,6 @@
   .socialContainer {
     padding: 0.5em 1em;
     flex-direction: column;
-
   }
 
   .textSocial {
@@ -101,5 +96,6 @@
 
   .button {
     font-size: 1em;
+    padding: 8px 24px;
   }
 }

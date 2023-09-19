@@ -1,0 +1,88 @@
+.modalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  visibility: visible;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000c4;
+}
+
+.modalContent {
+  position: relative;
+  padding: 12px 24px;
+  width: 420px;
+  height: 675px;
+  border-radius: 12px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.closeButton {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  background-color: #ffffff00;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closeButton:hover {
+  transform: scale(1.2);
+  color: #454545;
+}
+
+.imagesContainer {
+  display: flex;
+  overflow-x: hidden;
+  flex-flow: row nowrap;
+  max-width: 100%;
+}
+
+.image {
+  min-width: 375px;
+  min-height: 666px;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+.nextImage,
+.prevImage {
+  position: absolute;
+  top: 50%;
+  background-color: #ffffff44;
+  padding: 5px 10px;
+  border: 1px solid #454545;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 900;
+}
+
+.nextImage:hover,
+.prevImage:hover {
+  background-color: #4545454e;
+  border: 1px solid black;
+}
+
+.nextImage {
+  right: 12px;
+}
+
+.prevImage {
+  left: 12px;
+}
+
+.carouselImage {
+  display: none;
+}
+
+.activeCarouselImage {
+  display: block;
+}

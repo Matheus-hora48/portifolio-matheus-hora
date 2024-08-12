@@ -2,9 +2,8 @@
 
 import { useState } from "react";
 import Style from "./moreInfos.module.css";
-import Skills from "./skils/skills";
-import SkillItem from "./skils/skills";
-import Experience from "./experience/experience";
+import SkillItem from "./skills/SkillItem";
+import Experience from "./experience/Experience";
 
 const MoreInfos = () => {
   const [selectedButton, setSelectedButton] = useState("skills");
@@ -22,27 +21,27 @@ const MoreInfos = () => {
     {
       title: "Tecnologias Front-End Web",
       tech: "Javacript",
-      content: "HTML, CSS, Javacript, Typescript, NextJs",
+      content: "HTML, CSS, Javacript, JavaScript/TypeScript, Next.Js, Angular",
     },
     {
       title: "Back-end",
       tech: "NodeJs",
-      content: "NodeJs, NestJs",
+      content: "Node.Js, Nest.Js, C#",
     },
     {
       title: "Database",
       tech: "PostgresSQL",
-      content: "PostgresSQL, MariaDB, Mysql, SQLite",
+      content: "PostgreSQL, MariaDB, MySQL, SQLite, Firebird",
     },
     {
-      title: "Controle de versionamento",
-      tech: "Git",
-      content: "Git, GitHub, GitLab",
+      title: "DevOps e Ferramentas de CI/CD",
+      tech: "GitHub Actions",
+      content: "Docker, Jenkins, Fastlane",
     },
   ];
 
   return (
-    <div className={`${Style.content} content-wrapper`}>
+    <div className={`${Style.content} ${Style.contentWrapper}`}>
       <div className={Style.buttons}>
         <span
           className={`${Style.button} ${
@@ -58,7 +57,7 @@ const MoreInfos = () => {
           }`}
           onClick={() => handleSelected("experience")}
         >
-          Experiencia
+          Experiência
         </span>
         <span
           className={`${Style.button} ${
@@ -70,8 +69,8 @@ const MoreInfos = () => {
         </span>
       </div>
       <div
-        className={`${Style.content} content-wrapper ${
-          selectedButton !== "skills" ? "hide" : ""
+        className={`${Style.content} ${
+          selectedButton !== "skills" ? Style.hide : ""
         }`}
       >
         {selectedButton === "skills" && (
@@ -95,7 +94,7 @@ const MoreInfos = () => {
                 subtitle: "Desenvolvedor Mobile",
                 date: "ago de 2021 - out de 2023",
                 content: [
-                  "Na Top Soft, fui responsável pelo desenvolvimento integral de um sistema CRM, tanto na versão web quanto na mobile utilizando o Flutter, o que trouxe significativas melhorias operacionais para nossos clientes. Além disso, criei um módulo específico para uma das maiores empresas de mecânica de caminhões da região. Este módulo gerenciava a entrada e saída de caminhões através das ordens de serviço (OS), otimizando o controle na portaria. Também desenvolvi um recurso para facilitar a manipulação de romaneios, aprimorando a eficiência logística para diversas empresas."""
+                  "Na Top Soft, fui responsável pelo desenvolvimento integral de um sistema CRM, tanto na versão web quanto na mobile utilizando o Flutter, o que trouxe significativas melhorias operacionais para nossos clientes. Além disso, criei um módulo específico para uma das maiores empresas de mecânica de caminhões da região. Este módulo gerenciava a entrada e saída de caminhões através das ordens de serviço (OS), otimizando o controle na portaria. Também desenvolvi um recurso para facilitar a manipulação de romaneios, aprimorando a eficiência logística para diversas empresas.",
                 ],
               }}
             />
@@ -106,7 +105,7 @@ const MoreInfos = () => {
                 subtitle: "Desenvolvedor Mobile",
                 date: "ago de 2023 - até o momento",
                 content: [
-                  "Na Conceito Tecnologia, lidero a equipe de desenvolvimento Flutter, contribuindo para a criação de um aplicativo móvel integrado a um sistema ERP de desktop. Utilizando Flutter e C#, sou responsável por arquitetar soluções eficientes e inovadoras, garantindo a integração perfeita entre as plataformas mobile e desktop."
+                  "Na Conceito Tecnologia, lidero a equipe de desenvolvimento Flutter, contribuindo para a criação de um aplicativo móvel integrado a um sistema ERP de desktop. Utilizando Flutter e C#, sou responsável por arquitetar soluções eficientes e inovadoras, garantindo a integração perfeita entre as plataformas mobile e desktop.",
                 ],
               }}
             />
@@ -125,7 +124,7 @@ const MoreInfos = () => {
                   "Flutter & Dart - O Guia Completo - Udemy",
                   "Responsividade no Flutter - Udemy",
                   "Desenvolvimento de Aplicativos usando Kotlin - Udemy",
-                  "Injeção deDependências no Flutter com GetIt + Injectable - Udemy",
+                  "Injeção de Dependências no Flutter com GetIt + Injectable - Udemy",
                 ],
               }}
             />

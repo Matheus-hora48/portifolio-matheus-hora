@@ -92,11 +92,21 @@ const MoreInfos = () => {
               isCertification={false}
               info={{
                 title: "Top Soft Informática",
-                subtitle: undefined,
-                date: "ago de 2021 - O momento",
+                subtitle: "Desenvolvedor Mobile",
+                date: "ago de 2021 - out de 2023",
                 content: [
-                  "Minha jornada começou como um especialista em correção de bugs e implementação de recursos em aplicativos ERP mobile. Agora, estou trabalhando em um projeto incrível de plataforma cruzada usando Node e Flutter. Minha missão é coletar dados da API Node e transformá-los em insights incríveis com o Flutter.Recentemente, criei um Dashboard que fornece informações valiosas sobre os produtos vendidos, transformando dados complexos em uma visualização atraente e fácil de entender. ",
-                  "Sou obcecado em transformar soluções tecnológicas em experiências incríveis para os usuários.Se você procura alguém apaixonado por tecnologia, inovação e criatividade, pode contar comigo. Estou sempre em busca de novos desafios e oportunidades para aprimorar minhas habilidades e criar soluções ainda mais impressionantes.",
+                  "Na Top Soft, fui responsável pelo desenvolvimento integral de um sistema CRM, tanto na versão web quanto na mobile utilizando o Flutter, o que trouxe significativas melhorias operacionais para nossos clientes. Além disso, criei um módulo específico para uma das maiores empresas de mecânica de caminhões da região. Este módulo gerenciava a entrada e saída de caminhões através das ordens de serviço (OS), otimizando o controle na portaria. Também desenvolvi um recurso para facilitar a manipulação de romaneios, aprimorando a eficiência logística para diversas empresas."""
+                ],
+              }}
+            />
+            <Experience
+              isCertification={false}
+              info={{
+                title: "Conceito Tecnologia",
+                subtitle: "Desenvolvedor Mobile",
+                date: "ago de 2023 - até o momento",
+                content: [
+                  "Na Conceito Tecnologia, lidero a equipe de desenvolvimento Flutter, contribuindo para a criação de um aplicativo móvel integrado a um sistema ERP de desktop. Utilizando Flutter e C#, sou responsável por arquitetar soluções eficientes e inovadoras, garantindo a integração perfeita entre as plataformas mobile e desktop."
                 ],
               }}
             />
